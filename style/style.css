@@ -1,0 +1,30 @@
+.container .box{
+    background: purple;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+.container2 {
+    display: flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.container2 .item{
+    height: 100px;
+    width:100px;
+    background: blue;
+    border:1px solid red;
+    
+
+}
+
+@media screen and (max-width:576px){
+    .container{
+        flex-direction: column;
+    }
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr)
+    }
+}
